@@ -1,0 +1,27 @@
+{
+  "name": "entitizer",
+  "version": "0.0.1",
+  "description": "Entitizer",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entitizer/entitizer-js.git"
+  },
+  "keywords": [
+    "entitizer"
+  ],
+  "author": "Dumitru Cantea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/entitizer/entitizer-js/issues"
+  },
+  "homepage": "https://github.com/entitizer/entitizer-js#readme",
+  "dependencies": {
+    "concepts-parser": "^0.1.1",
+    "entitizer.entities-extractor": "^0.1.1",
+    "entity-finder": "0.0.2"
+  }
+}
