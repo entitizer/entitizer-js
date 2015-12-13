@@ -20,8 +20,9 @@
   },
   "homepage": "https://github.com/entitizer/entitizer-js#readme",
   "dependencies": {
-    "concepts-parser": "^0.1.1",
-    "entitizer.entities-extractor": "^0.1.1",
+    "bluebird": "^3.0.6",
+    "concepts-parser": "^0.1.2",
+    "entitizer.entities-extractor": "^0.2.0",
     "entity-finder": "0.0.2"
   }
 }

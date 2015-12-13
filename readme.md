@@ -8,17 +8,25 @@ Entitizer main module.
 
 Extracts concepts from a context: text, lang, country.
 
-### entities(context, options)
+### entitiesFromContext(context, options)
 
 Extracts entities from a context.
 
+### entitiesFromConcepts(context, concepts, options)
+
+Extracts entities from concepts.
+
 ### getEntity(name, options)
 
-Gets an entity from Entitizer's DB
+Gets an entity by name from Entitizer's DB
 
-### findEntity(name, options)
+### findEntity(name, lang, options)
 
 Finds an entity on the Internet.
+
+### quotes(context, options)
+
+Extracts quotes from a context: text, lang.
 
 ### language(text, options)
 
