@@ -23,6 +23,11 @@
     "bluebird": "^3.0.6",
     "concepts-parser": "^0.1.2",
     "entitizer.entities-extractor": "^0.2.0",
-    "entity-finder": "0.0.2"
+    "entity-finder": "0.0.3",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "dotenv": "^1.2.0",
+    "mocha": "^2.3.4"
   }
 }

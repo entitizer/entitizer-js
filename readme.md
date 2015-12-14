@@ -4,6 +4,10 @@ Entitizer main module.
 
 ## API
 
+### entitize(context, options)
+
+Entitize a context.
+
 ### concepts(context, options)
 
 Extracts concepts from a context: text, lang, country.
@@ -16,9 +20,17 @@ Extracts entities from a context.
 
 Extracts entities from concepts.
 
-### getEntity(name, options)
+### entityById(id, options)
 
-Gets an entity by name from Entitizer's DB
+Gets an entity by id from Entitizer's DB
+
+### entityByKey(key, options)
+
+Gets an entity by key from Entitizer's DB
+
+### entityByName(name, context, options)
+
+Gets an entity by name & context from Entitizer's DB
 
 ### findEntity(name, lang, options)
 
@@ -32,6 +44,6 @@ Extracts quotes from a context: text, lang.
 
 Identify text language
 
-### languages()
+### cultures()
 
-Returns supported languages.
+Returns supported cultures.
