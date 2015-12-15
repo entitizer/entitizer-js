@@ -36,9 +36,9 @@ Gets an entity by name & context from Entitizer's DB
 
 Finds an entity on the Internet.
 
-### quotes(context, options)
+### quotes(text, lang, options)
 
-Extracts quotes from a context: text, lang.
+Extracts quotes from a text.
 
 ### language(text, options)
 
