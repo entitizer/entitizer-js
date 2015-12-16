@@ -1,6 +1,6 @@
 {
   "name": "entitizer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Entitizer",
   "main": "./lib/index.js",
   "scripts": {
