@@ -1,14 +1,17 @@
 {
   "name": "entitizer",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Entitizer",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha -t 5000"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/entitizer/entitizer-js.git"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   },
   "keywords": [
     "entitizer"
@@ -25,6 +28,8 @@
     "entitizer.entities-extractor": "^0.2.1",
     "entitizer.entities-storage": "^0.1.6",
     "entity-finder": "0.0.3",
+    "glob": "^7.1.1",
+    "joi": "^9.2.0",
     "lodash": "^3.10.1",
     "quote-parser": "^0.0.1"
   },
