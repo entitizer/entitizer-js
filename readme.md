@@ -2,7 +2,7 @@
 
 Entitizer main module.
 
-[![Coverage Status](https://coveralls.io/repos/github/entitizer/entitizer-js/badge.svg?branch=master)](https://coveralls.io/github/entitizer/entitizer-js?branch=master)
+[![Build Status](https://travis-ci.org/entitizer/entitizer-js.svg?branch=master)](https://travis-ci.org/entitizer/entitizer-js)
 
 ## API
 
