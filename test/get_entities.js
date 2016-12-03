@@ -9,7 +9,7 @@ if (!process.env.AWS_REGION) {
 const assert = require('assert');
 const entitizer = require('../lib');
 
-const actionName = 'entities.get.entities';
+const actionName = 'entity.find';
 
 describe(actionName, () => {
 	it('should get by ids', () => {
