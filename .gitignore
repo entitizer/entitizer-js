@@ -4,8 +4,9 @@
 
 .DS_Store
 .env
-out
-docs
 node_modules
 npm-debug.log
 *.tgz
+lib
+types
+test-js

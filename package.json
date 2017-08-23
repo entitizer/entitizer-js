@@ -1,10 +1,23 @@
 {
   "name": "entitizer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Entitizer",
+  "private": true,
   "main": "./lib/index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha -t 5000"
+    "clean_test": "shx rm -rf test-js",
+    "clean_lib": "shx rm -rf lib",
+    "clean_types": "shx rm -rf types",
+    "build_test": "npm-run-all build_lib clean_test && tsc --project ./test --pretty",
+    "test_mocha": "mocha --opts test/default.opts test-js/**/*.spec.js",
+    "test": "npm-run-all build_test test_mocha clean_test",
+    "build_lib": "npm-run-all clean_lib clean_types tsc",
+    "tsc": "tsc",
+    "tscw": "tsc -w",
+    "preversion": "npm run tsc",
+    "postversion": "git push --follow-tags",
+    "prepublish": "npm run tsc"
   },
   "repository": {
     "type": "git",
@@ -22,21 +35,14 @@
     "url": "https://github.com/entitizer/entitizer-js/issues"
   },
   "homepage": "https://github.com/entitizer/entitizer-js#readme",
-  "dependencies": {
-    "bluebird": "^3.0.6",
-    "cld": "^2.4.7",
-    "concepts-parser": "^0.1.3",
-    "debug": "^2.3.3",
-    "entitizer.entities-extractor": "^0.2.1",
-    "entitizer.entities-storage": "^0.1.6",
-    "entity-finder": "0.2.0",
-    "html-explorer": "^0.1.12",
-    "joi": "^9.2.0",
-    "lodash": "^3.10.1",
-    "quote-parser": "^0.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "dotenv": "^1.2.0",
-    "mocha": "^2.3.4"
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^8.0.24",
+    "debug": "^3.0.0",
+    "mocha": "^3.5.0",
+    "npm-run-all": "^4.0.2",
+    "shx": "^0.2.2",
+    "typescript": "^2.4.2"
   }
 }
