@@ -19,10 +19,19 @@ describe('Entitizer', function () {
         ])
     });
 
-    it('should entitize an empty context', function () {
+    it('should find entity', function () {
         return entitizer.entitize({ text: 'In Moldova e soare', lang: 'ro' })
             .then(resut => {
-                console.log(resut);
+                assert.equal(resut.entities.length, 1, 'one entity found');
+                assert.equal(resut.concepts.length, 0, '0 unknown concepts');
+            });
+    });
+
+    it('should find all concepts', function () {
+        return entitizer.entitize({ text: 'In Romania e soare. FMI e al 2-lea concept', lang: 'ro' })
+            .then(resut => {
+                assert.equal(resut.entities.length, 0, 'no entities found');
+                assert.equal(resut.concepts.length, 2, '2 unknown concepts');
             });
     });
 });
