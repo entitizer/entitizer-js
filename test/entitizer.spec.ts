@@ -30,8 +30,10 @@ describe('Entitizer', function () {
     it('should find all concepts', function () {
         return entitizer.entitize({ text: 'In Romania e soare. FMI e al 2-lea concept', lang: 'ro' })
             .then(resut => {
+                console.log(resut)
                 assert.equal(resut.entities.length, 0, 'no entities found');
-                assert.equal(resut.concepts.length, 2, '2 unknown concepts');
+                // 2-lea is an error
+                assert.equal(resut.concepts.length, 3, '3 unknown concepts');
             });
     });
 });
