@@ -35,8 +35,13 @@
     "url": "https://github.com/entitizer/entitizer-js/issues"
   },
   "homepage": "https://github.com/entitizer/entitizer-js#readme",
-  "dependencies": {},
+  "dependencies": {
+    "entitizer.data": "^0.1.1",
+    "entitizer.entities": "^0.1.0",
+    "entitizer.entities-extractor": "^0.4.0"
+  },
   "devDependencies": {
+    "@types/joi": "^10.4.3",
     "@types/mocha": "^2.2.42",
     "@types/node": "^8.0.24",
     "debug": "^3.0.0",

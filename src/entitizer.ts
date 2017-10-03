@@ -16,7 +16,7 @@ class ExtractorRepositoryImpl implements ExtractorRepository<Entity> {
 
 function formatKey(name: string, lang: string): string {
     return UniqueNameHelper.formatKey({
-        uniqueName: UniqueNameHelper.formatUniqueName(name),
+        uniqueName: UniqueNameHelper.formatUniqueName(name, lang),
         lang
     });
 }
